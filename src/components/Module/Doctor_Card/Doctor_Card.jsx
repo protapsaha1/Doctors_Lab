@@ -7,7 +7,7 @@ import '@smastrom/react-rating/style.css';
 
 const Doctor_Card = ({ img, name, profession_status, ratings, location, duty_time, visit_fee }) => {
     return (
-        <div className="w-[364px] h-[570px] rounded-xl p-5 bg-[#ffffff] hover:shadow-2xl border border-slate-200">
+        <div className="w-[364px] h-[570px] rounded-xl p-5 bg-[#ffffff] hover:shadow-2xl border border-slate-200 mb-4">
             {/* Doctor Image */}
             <div className="w-[100%] h-[220px]">
                 <img className="rounded-xl w-[100%] h-[100%]" src={img} alt="Doctor Image" />
@@ -25,7 +25,7 @@ const Doctor_Card = ({ img, name, profession_status, ratings, location, duty_tim
                     readOnly
                 />
             </div>
-            <hr className="my-5" />
+            <hr className="my-3" />
             {/* Doctor Info */}
             <div className="mb-5">
                 <label className="flex items-center my-2">

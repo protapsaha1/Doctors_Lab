@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Default_Main from "../Layouts/Default_Main";
 import Home_Page from "../Pages/Home_Page_Element/Home_Page/Home_Page";
 import All_Doctors from "../Pages/Doctors_Page/All_Doctors/All_Doctors";
+import Doctor_Profile from "../Pages/Doctors_Page/Doctor_Profile/Doctor_Profile";
 
 const router = createBrowserRouter([
     {
@@ -15,7 +16,11 @@ const router = createBrowserRouter([
             {
                 path: "doctors",
                 element: <All_Doctors />
-            }
+            },
+            {
+                path: "doctors-profile",
+                element: <Doctor_Profile />
+            },
         ]
     }
 ])
