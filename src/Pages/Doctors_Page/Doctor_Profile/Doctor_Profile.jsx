@@ -1,12 +1,15 @@
-import Banner_Section from "../../Home_Page_Element/Banner_Section/Banner_Section";
 import doctor from "../../../../public/image/banner_image/banner_doctor_2.jpg";
 import { Rating } from "@smastrom/react-rating";
 import Tippy from "@tippyjs/react";
 import { GoLocation } from "react-icons/go";
+// import decoration from "../../../../public/image/banner_image/capsul_doctor_profile.jpg";
+// import decoration2 from "../../../../public/image/banner_image/decoration.jpg";
 const Doctor_Profile = () => {
     return (
         <>
-            <Banner_Section />
+            <div className="bg-emerald-900 w-[100%] h-[500px] flex justify-evenly pt-20 px-20 pb-20">
+                <h1 className="text-6xl font-bold text-white text-center mt-40">Doctor Profile - <span className="uppercase">Dr. Robi</span></h1>
+            </div>
             <div className="my-28">
                 <div className="w-[1140px] mx-auto bg-white mb-10 rounded-lg p-5 flex border border-slate-100 shadow-lg">
                     <div className="w-[550px] h-[378px] mr-5">

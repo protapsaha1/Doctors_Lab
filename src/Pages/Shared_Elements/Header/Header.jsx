@@ -16,7 +16,7 @@ const Header_Section = () => {
         <Tippy content="Appoinment">
             <li className="text-xl font-[300] text-white hover:bg-emerald-800 px-4 py-3 rounded-lg"><Active_Link to="/appoinnment">Appoinment</Active_Link></li>
         </Tippy>
-        <Tippy content="Content">
+        <Tippy content="Contact">
             <li className="text-xl font-[300] text-white hover:bg-emerald-800 px-4 py-3 rounded-lg"><a href="#contact">Contact</a></li>
         </Tippy>
         <Tippy content="About">
