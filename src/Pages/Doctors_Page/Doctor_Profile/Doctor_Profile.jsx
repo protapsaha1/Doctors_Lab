@@ -33,6 +33,7 @@ const Doctor_Profile = () => {
                                 <div className="text-2xl text-slate-800 mr-5"><GoLocation /></div>
                                 <div className="flex items-center">
                                     <h3 className="text-slate-800 font-[200] tracking-[1px] mr-2">Dhanmondi, Dhaka, Bangladesh - </h3>
+                                    {/* Location deraction */}
                                     <Tippy content="Location"><span className="text-orange-500 hover:text-orange-600 cursor-pointer font-bold tracking-normal">Get Directions</span></Tippy>
                                 </div>
                             </div>
