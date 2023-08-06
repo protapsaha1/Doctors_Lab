@@ -2,13 +2,15 @@ import doctor from "../../../../public/image/banner_image/banner_doctor_2.jpg";
 import { Rating } from "@smastrom/react-rating";
 import Tippy from "@tippyjs/react";
 import { GoLocation } from "react-icons/go";
-// import decoration from "../../../../public/image/banner_image/capsul_doctor_profile.jpg";
-// import decoration2 from "../../../../public/image/banner_image/decoration.jpg";
+import ig1 from "../../../../public/image/banner_image/Group 7.png";
+import ig2 from "../../../../public/image/banner_image/Vector (1).png";
 const Doctor_Profile = () => {
     return (
         <>
-            <div className="bg-emerald-900 w-[100%] h-[500px] flex justify-evenly pt-20 px-20 pb-20">
-                <h1 className="text-6xl font-bold text-white text-center mt-40">Doctor Profile - <span className="uppercase">Dr. Robi</span></h1>
+            <div className="bg-emerald-600 w-[100%] h-[500px] pt-20 px-20 pb-20 relative">
+                <h1 className="text-6xl font-bold text-white text-center mt-40 tracking-[2px] leading-6">Doctor Profile - <span className="uppercase">Dr. Robi</span></h1>
+                <img className="w-[300px] h-[300px] absolute left-2 top-28" src={ig1} alt="" />
+                <img className="w-[200px] h-[200px] absolute right-1 bottom-1" src={ig2} alt="" />
             </div>
             <div className="my-28">
                 <div className="w-[1140px] mx-auto bg-white mb-10 rounded-lg p-5 flex border border-slate-100 shadow-lg">
