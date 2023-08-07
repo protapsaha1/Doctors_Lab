@@ -20,7 +20,7 @@ const Dashboard_Routes = () => {
                 </ul>
 
             </div>
-            <div className="bg-slate-200">
+            <div className="bg-slate-200 w-[100%] h-[100%]">
                 <Outlet />
             </div>
         </div>

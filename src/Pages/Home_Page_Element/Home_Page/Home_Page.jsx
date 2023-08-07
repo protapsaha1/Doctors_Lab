@@ -9,14 +9,14 @@ import Patients_Feedback_section from "../Patients_Feedback_section/Patients_Fee
 const Home_Page = () => {
     useTitle("Home");
     return (
-        <>
+        <div className="pb-28">
             <Banner_Section />
             <Hospital_Services />
             <Hospital_Time_Address_Contact_Section />
             <Patients_Feedback_section />
             <Experts_Doctors_Section />
             <Contact_Section />
-        </>
+        </div>
     );
 };
 

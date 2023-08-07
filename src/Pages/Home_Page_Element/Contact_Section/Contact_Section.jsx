@@ -3,7 +3,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Contact_Section = () => {
     return (
-        <div className="w-[1140px] h-[100%] mx-auto rounded-lg bg-[#07332F] flex items-center p-20 my-28" id="contact">
+        <div className="w-[1140px] h-[100%] mx-auto rounded-lg bg-[#07332F] flex items-center p-20 mt-28" id="contact">
             <div className="w-[40%] mr-20">
                 <h1 className="text-white font-bold text-4xl ">Contact With Us</h1>
                 <p className="text-white font-[400] my-5 ps-3 tracking-[1px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus quisquam, sint quidem dolor, minima ea quas corporis.</p>

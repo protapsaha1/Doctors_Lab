@@ -6,7 +6,7 @@ const Default_Main = () => {
     return (
         <>
             <Header_Section />
-            <div className="max-w-[1600px] h-[100%] mx-auto">
+            <div className="max-w-[1600px] h-[100%] mx-auto bg-white">
                 <Outlet />
             </div>
             <Footer_Section />

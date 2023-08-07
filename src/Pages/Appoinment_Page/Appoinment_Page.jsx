@@ -6,6 +6,7 @@ import imgLab from "../../../public/image/Appoinment_bg/doclab.jpeg";
 import moment from "moment/moment";
 import ig1 from "../../../public/image/banner_image/Group 7.png";
 import ig2 from "../../../public/image/banner_image/Vector (1).png";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Appoinment_Page = () => {
     useTitle("Appoinment");
@@ -20,7 +21,7 @@ const Appoinment_Page = () => {
                 <img className="w-[200px] h-[200px] absolute right-1 bottom-1" src={ig2} alt="" />
             </div>
 
-            <div className="py-28 bg-url">
+            <div className="py-28 bg-url body">
                 <div className="w-[1050px] mx-auto flex ">
                     {/* Calender  */}
                     <div className="">
@@ -81,7 +82,38 @@ const Appoinment_Page = () => {
                                     <h3 className="text-3xl text-slate-800 font-bold mb-2">Teeth Dental Cavity</h3>
                                     <p className="text-lg font-medium text-red-500 tracking-[1px]">10:00 AM - 11:00 AM</p>
                                 </div>
-                                <button className="text-xl font-semibold text-emerald-500 hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300 ml-10">Book Appoinment</button>
+                                {/* modal click btn */}
+                                <label className="text-xl font-semibold text-emerald-500 text-center hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300cursor-pointer block transition-[.5s]" htmlFor="book_to_click">Book Appoinment</label>
+                                {/* modal */}
+                                <div className="main_book_modal shadow-slate-200">
+                                    <input type="checkbox" id="book_to_click" />
+                                    <div className="modal_content_book">
+                                        <label htmlFor="book_to_click" className="text-2xl font-bold text-slate-900 bg-gray-200 w-[40px] h-[40px] rounded-[50%] cursor-pointer flex items-center justify-center"><AiOutlineClose /></label>
+                                        <div className="main_content">
+                                            <p className="text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ea ad in vitae aliquid earum temporibus, </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="w-[360px] py-16 px-10 rounded-xl border border-slate-200 bg-white shadow-2xl shadow-slate-200">
+                                <div className="w-[140px] h-[140px] mx-auto"><img className="w-[100%] h-[100%] rounded-[50%] shadow-2xl" src={imgLab} alt="service image" /></div>
+                                <div className="my-10 text-center">
+                                    <h3 className="text-3xl text-slate-800 font-bold mb-2">Teeth Dental Cavity</h3>
+                                    <p className="text-lg font-medium text-red-500 tracking-[1px]">10:00 AM - 11:00 AM</p>
+                                </div>
+                                {/* modal click btn */}
+                                <label className="text-xl font-semibold text-emerald-500 text-center hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300cursor-pointer block transition-[.5s]" htmlFor="book_to_click">Book Appoinment</label>
+                                {/* modal */}
+                                <div className="main_book_modal shadow-slate-200">
+                                    <input type="checkbox" id="book_to_click" />
+                                    <div className="modal_content_book">
+                                        <label htmlFor="book_to_click" className="text-2xl font-bold text-slate-900 bg-gray-200 w-[40px] h-[40px] rounded-[50%] cursor-pointer flex items-center justify-center"><AiOutlineClose /></label>
+                                        <div className="main_content">
+                                            <p className="text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ea ad in vitae aliquid earum temporibus, </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="w-[360px] py-16 px-10 rounded-xl border border-slate-200 bg-white shadow-2xl shadow-slate-200">
                                 <div className="w-[140px] h-[140px] mx-auto"><img className="w-[100%] h-[100%] rounded-[50%] shadow-2xl" src={imgLab} alt="service image" /></div>
@@ -89,7 +121,18 @@ const Appoinment_Page = () => {
                                     <h3 className="text-3xl text-slate-800 font-bold mb-2">Teeth Dental Cavity</h3>
                                     <p className="text-lg font-medium text-red-500 tracking-[1px]">10:00 AM - 11:00 AM</p>
                                 </div>
-                                <button className="text-xl font-semibold text-emerald-500 hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300 ml-10">Book Appoinment</button>
+                                {/* modal click btn */}
+                                <label className="text-xl font-semibold text-emerald-500 text-center hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300cursor-pointer block transition-[.5s]" htmlFor="book_to_click">Book Appoinment</label>
+                                {/* modal */}
+                                <div className="main_book_modal shadow-slate-200">
+                                    <input type="checkbox" id="book_to_click" />
+                                    <div className="modal_content_book">
+                                        <label htmlFor="book_to_click" className="text-2xl font-bold text-slate-900 bg-gray-200 w-[40px] h-[40px] rounded-[50%] cursor-pointer flex items-center justify-center"><AiOutlineClose /></label>
+                                        <div className="main_content">
+                                            <p className="text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ea ad in vitae aliquid earum temporibus, </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="w-[360px] py-16 px-10 rounded-xl border border-slate-200 bg-white shadow-2xl shadow-slate-200">
                                 <div className="w-[140px] h-[140px] mx-auto"><img className="w-[100%] h-[100%] rounded-[50%] shadow-2xl" src={imgLab} alt="service image" /></div>
@@ -97,15 +140,18 @@ const Appoinment_Page = () => {
                                     <h3 className="text-3xl text-slate-800 font-bold mb-2">Teeth Dental Cavity</h3>
                                     <p className="text-lg font-medium text-red-500 tracking-[1px]">10:00 AM - 11:00 AM</p>
                                 </div>
-                                <button className="text-xl font-semibold text-emerald-500 hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300 ml-10">Book Appoinment</button>
-                            </div>
-                            <div className="w-[360px] py-16 px-10 rounded-xl border border-slate-200 bg-white shadow-2xl shadow-slate-200">
-                                <div className="w-[140px] h-[140px] mx-auto"><img className="w-[100%] h-[100%] rounded-[50%] shadow-2xl" src={imgLab} alt="service image" /></div>
-                                <div className="my-10 text-center">
-                                    <h3 className="text-3xl text-slate-800 font-bold mb-2">Teeth Dental Cavity</h3>
-                                    <p className="text-lg font-medium text-red-500 tracking-[1px]">10:00 AM - 11:00 AM</p>
+                                {/* modal click btn */}
+                                <label className="text-xl font-semibold text-emerald-500 text-center hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300cursor-pointer block transition-[.5s]" htmlFor="book_to_click">Book Appoinment</label>
+                                {/* modal */}
+                                <div className="main_book_modal shadow-slate-200">
+                                    <input type="checkbox" id="book_to_click" />
+                                    <div className="modal_content_book">
+                                        <label htmlFor="book_to_click" className="text-2xl font-bold text-slate-900 bg-gray-200 w-[40px] h-[40px] rounded-[50%] cursor-pointer flex items-center justify-center"><AiOutlineClose /></label>
+                                        <div className="main_content">
+                                            <p className="text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ea ad in vitae aliquid earum temporibus, </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button className="text-xl font-semibold text-emerald-500 hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300 ml-10">Book Appoinment</button>
                             </div>
                         </div>
                     </div>

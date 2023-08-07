@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Hospital_Services = () => {
     return (
-        <div className="w-[1140px] h-[1000px] mx-auto mt-28 flex">
+        <div className="w-[1140px] h-[1000px] mx-auto my-28 flex">
             {/* Image */}
             <div className="w-[40%] h-[100%] mr-4">
                 <img className="w-[100%] h-[100%] rounded-lg" src={doctor} alt="" />
@@ -20,9 +20,9 @@ const Hospital_Services = () => {
                     </p>
                 </div>
                 <div className="flex items-center my-10 border border-gray-200 rounded-lg shadow-xl shadow-slate-200 relative">
-                    <p className="text-xl font-semibold hover:bg-emerald-400 hover:rounded-lg ps-5 py-7 pr-8 hover:shadow-inner cursor-pointer">Cavity Protection</p>
-                    <p className="text-xl font-semibold hover:bg-emerald-400 hover:rounded-lg ps-5 py-7 pr-8 hover:shadow-inner cursor-pointer">Cosmetic Dentisty</p>
-                    <p className="text-xl font-semibold hover:bg-emerald-400 hover:rounded-lg ps-5 py-7 pr-8 hover:shadow-inner cursor-pointer">Oral Surgery</p>
+                    <p className="text-xl font-semibold text-slate-800 hover:bg-emerald-400 hover:rounded-lg ps-5 py-7 pr-8 hover:shadow-inner cursor-pointer">Cavity Protection</p>
+                    <p className="text-xl font-semibold text-slate-800 hover:bg-emerald-400 hover:rounded-lg ps-5 py-7 pr-8 hover:shadow-inner cursor-pointer">Cosmetic Dentisty</p>
+                    <p className="text-xl font-semibold text-slate-800 hover:bg-emerald-400 hover:rounded-lg ps-5 py-7 pr-8 hover:shadow-inner cursor-pointer">Oral Surgery</p>
                     <div className="text-4xl text-emerald-600 hover:text-white w-14 h-14 bg-slate-100 hover:bg-emerald-400 border-l-2 rounded-[50%] flex items-center justify-center absolute -right-9 hover:shadow-2xl hover:shadow-emerald-100"><GoChevronRight /></div>
                 </div>
                 <div className="w-[650px] h-[350px] mx-auto my-5">

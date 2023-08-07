@@ -68,7 +68,7 @@ const Patients_Feedback_section = () => {
             <div className="mt-16 grid grid-cols-2 gap-4 relative">
 
                 {/* -----------------------FaQuoteRight-------------------------- */}
-                <div className="w-[558px] h-[290px] border border-slate-500 p-8">
+                <div className="w-[558px] h-[290px] bg-white border border-slate-500 rounded p-8">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
                             <div className="w-[60px] h-[60px]">
@@ -86,7 +86,7 @@ const Patients_Feedback_section = () => {
                     <p className="mt-10 text-slate-900 text-lg font-[400]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit similique quibusdam dicta labore autem ipsam at rem ipsum iusto nihil saepe minima incidunt temporibus, sed tempora ut, accusantium nesciunt!</p>
                 </div>
                 {/* -----------------------FaQuoteRight-------------------------- */}
-                <div className="w-[558px] h-[290px] border border-slate-500 p-8">
+                <div className="w-[558px] h-[290px] bg-white border border-slate-500 rounded p-8">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
                             <div className="w-[60px] h-[60px]">

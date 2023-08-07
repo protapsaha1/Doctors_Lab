@@ -132,7 +132,7 @@ const All_Doctors = () => {
                     visit_fee="1200"
                 />
             </div>
-            <div className="mb-10 flex items-center justify-center">
+            <div className="pb-10 flex items-center justify-center">
                 <Tippy content="Previous">
                     <button className="text-3xl text-white bg-emerald-500 hover:bg-emerald-400 py-1 px-2 mr-4 rounded-lg"><AiOutlineDoubleLeft /></button>
                 </Tippy>
