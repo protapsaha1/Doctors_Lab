@@ -12,6 +12,8 @@ import All_Users from "../Pages/Dashboard_Routes/Admin_Section/All_Users/All_Use
 import Manage_Doctors from "../Pages/Dashboard_Routes/Admin_Section/Manage_Doctors/Manage_Doctors";
 import Added_Doctors from "../Pages/Dashboard_Routes/Admin_Section/Added_Doctors/Added_Doctors";
 import Doctors from "../Pages/Doctors_Page/All_Doctors/Doctors";
+import Login_Page from "../Pages/Authentication/Login_Page/Login_Page";
+import SignUp_Page from "../Pages/Authentication/SignUp_Page/SignUp_Page";
 
 const router = createBrowserRouter([
     {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
                 path: "doctor-profile/:id",
                 element: <Doctor_Profile />,
                 loader: ({ params }) => fetch(`http://localhost:3001/doctors/${params.id}`)
+            },
+            {
+                path: "auth/login",
+                element: <Login_Page />
+            },
+            {
+                path: "auth/signup",
+                element: <SignUp_Page />
             }
         ]
     },

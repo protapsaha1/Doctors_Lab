@@ -83,7 +83,7 @@ const Appoinment_Page = () => {
                                     <p className="text-lg font-medium text-red-500 tracking-[1px]">10:00 AM - 11:00 AM</p>
                                 </div>
                                 {/* modal click btn */}
-                                <label className="text-xl font-semibold text-emerald-500 text-center hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300cursor-pointer block transition-[.5s]" htmlFor="book_to_click">Book Appoinment</label>
+                                <label className="text-xl font-semibold text-emerald-500 text-center hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300 cursor-pointer block transition-[.5s]" htmlFor="book_to_click">Book Appoinment</label>
                                 {/* modal */}
                                 <div className="main_book_modal shadow-slate-200">
                                     <input type="checkbox" id="book_to_click" />
@@ -115,7 +115,7 @@ const Appoinment_Page = () => {
                                     <p className="text-lg font-medium text-red-500 tracking-[1px]">10:00 AM - 11:00 AM</p>
                                 </div>
                                 {/* modal click btn */}
-                                <label className="text-xl font-semibold text-emerald-500 text-center hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300cursor-pointer block transition-[.5s]" htmlFor="book_to_click">Book Appoinment</label>
+                                <label className="text-xl font-semibold text-emerald-500 text-center hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300 cursor-pointer block transition-[.5s]" htmlFor="book_to_click">Book Appoinment</label>
                                 {/* modal */}
                                 <div className="main_book_modal shadow-slate-200">
                                     <input type="checkbox" id="book_to_click" />
@@ -146,7 +146,7 @@ const Appoinment_Page = () => {
                                     <p className="text-lg font-medium text-red-500 tracking-[1px]">10:00 AM - 11:00 AM</p>
                                 </div>
                                 {/* modal click btn */}
-                                <label className="text-xl font-semibold text-emerald-500 text-center hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300cursor-pointer block transition-[.5s]" htmlFor="book_to_click">Book Appoinment</label>
+                                <label className="text-xl font-semibold text-emerald-500 text-center hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300 cursor-pointer block transition-[.5s]" htmlFor="book_to_click">Book Appoinment</label>
                                 {/* modal */}
                                 <div className="main_book_modal shadow-slate-200">
                                     <input type="checkbox" id="book_to_click" />
@@ -177,7 +177,7 @@ const Appoinment_Page = () => {
                                     <p className="text-lg font-medium text-red-500 tracking-[1px]">10:00 AM - 11:00 AM</p>
                                 </div>
                                 {/* modal click btn */}
-                                <label className="text-xl font-semibold text-emerald-500 text-center hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300cursor-pointer block transition-[.5s]" htmlFor="book_to_click">Book Appoinment</label>
+                                <label className="text-xl font-semibold text-emerald-500 text-center hover:text-white bg-white hover:bg-emerald-500 py-3 px-4 rounded-lg border border-emerald-300 cursor-pointer block transition-[.5s]" htmlFor="book_to_click">Book Appoinment</label>
                                 {/* modal */}
                                 <div className="main_book_modal shadow-slate-200">
                                     <input type="checkbox" id="book_to_click" />

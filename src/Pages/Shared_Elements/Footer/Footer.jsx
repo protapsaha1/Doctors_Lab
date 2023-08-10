@@ -14,7 +14,7 @@ const Footer_Section = () => {
                             </label>
                         </div>
                         <p className="mt-5 mb-10 pr-5  text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br /> Labore velit perspiciatis nam non</p>
-                        <Link className="py-2 px-3 border-2 border-orange-400 text-orange-400 font-[500] hover:bg-orange-400 hover:text-white" to="/appoinnment">Appoinment</Link>
+                        <Link className="py-2 px-3 border-2 border-orange-400 text-orange-400 font-[500] hover:bg-orange-400 hover:text-white" to="/appoinment">Appoinment</Link>
                     </div>
                     <div>
                         <label className="text-xl font-[700] text-black">Quick Links</label>

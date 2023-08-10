@@ -23,7 +23,7 @@ const Header_Section = () => {
             <li className="text-xl font-[300] text-white hover:bg-emerald-800 px-4 py-3 rounded-lg"><Active_Link to="/doctors-profile">About</Active_Link></li>
         </Tippy>
         <Tippy content="Login">
-            <li className="text-xl font-[500] text-emerald-500 hover:text-white lg:ml-10 lg:mr-4 bg-white hover:bg-emerald-500 px-3 py-2 border-2 border-emerald-300 hover:border-emerald-600 rounded-lg shadow-lg"><Link to="/login">login</Link></li>
+            <li className="text-xl font-[500] text-emerald-500 hover:text-white lg:ml-10 lg:mr-4 bg-white hover:bg-emerald-500 px-3 py-2 border-2 border-emerald-300 hover:border-emerald-600 rounded-lg shadow-lg"><Link to="/auth/login">login</Link></li>
         </Tippy>
     </>;
     const pages_list_sm = <>
