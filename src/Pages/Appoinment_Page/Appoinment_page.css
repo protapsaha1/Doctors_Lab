@@ -14,7 +14,8 @@
 }
 
 .main_book_modal,
-.modal_content_book {
+.modal_content_book,
+.modal_content_pay {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -38,7 +39,29 @@
     --tw-shadow: var(--tw-shadow-colored);
 }
 
+.modal_content_pay {
+    opacity: 0;
+    visibility: hidden;
+    width: 438px;
+    height: 473px;
+    border: 1px solid rgb(179, 178, 178);
+    border-radius: 10px;
+    transition: .3s ease-in;
+    background: white;
+    padding: 20px;
+    --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    --tw-shadow-color: #a6a8ac;
+    --tw-shadow: var(--tw-shadow-colored);
+}
+
 #book_to_click:checked~.modal_content_book {
+    opacity: 1;
+    visibility: visible;
+}
+
+#book_to_click:checked~.modal_content_pay {
     opacity: 1;
     visibility: visible;
 }

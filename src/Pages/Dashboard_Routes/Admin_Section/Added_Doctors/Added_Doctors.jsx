@@ -7,18 +7,18 @@ const Added_Doctors = () => {
             <h1 className="text-3xl font-bold text-slate-800">Add a New Doctors</h1>
             {/* form */}
             <div className="w-[540px] h-[100%] bg-white mt-5 p-10 rounded-xl border border-slate-300">
-                <div>
+                <form>
                     <div className="mb-3">
                         <label className="text-lg font-medium text-gray-500">Name</label>
-                        <input className="w-[100%] h-[60px] rounded-lg border border-gray-300 bg-gray-50 ps-5 text-lg text-black font-medium mt-3 shadow-inner" type="text" placeholder="Enter your Name" />
+                        <input className="w-[100%] h-[50px] rounded-lg border border-gray-300 bg-gray-50 ps-5 text-lg text-black font-medium mt-2 shadow-inner" type="text" placeholder="Enter your Name" />
                     </div>
                     <div className="mb-3">
                         <label className="text-lg font-medium text-gray-500">Email</label>
-                        <input className="w-[100%] h-[60px] rounded-lg border border-gray-300 bg-gray-50 ps-5 text-lg text-black font-medium mt-3 shadow-inner" type="text" placeholder="Enter your Email" />
+                        <input className="w-[100%] h-[50px] rounded-lg border border-gray-300 bg-gray-50 ps-5 text-lg text-black font-medium mt-2 shadow-inner" type="text" placeholder="Enter your Email" />
                     </div>
                     <div className="mb-10">
                         <label className="text-lg font-medium text-gray-500">Name</label>
-                        <select className="w-[100%] h-[60px] rounded-lg border border-gray-300 bg-gray-50 ps-5 text-lg text-black font-medium mt-3 shadow-xl">
+                        <select className="w-[100%] h-[50px] rounded-lg border border-gray-300 bg-gray-50 ps-5 text-lg text-black font-medium mt-2 shadow-xl">
                             <option>dental</option>
                             <option>dental</option>
                             <option>dental</option>
@@ -32,8 +32,8 @@ const Added_Doctors = () => {
                             <BsImages />
                         </div>
                     </div>
-                    <button className="w-[100%] h-[50px] text-xl font-semibold text-white bg-emerald-900 rounded-lg mt-4">Add</button>
-                </div>
+                    <input className="w-[100%] h-[50px] text-2xl font-semibold text-white bg-emerald-900 rounded-lg mt-3 text-center cursor-pointer" value="Add" />
+                </form>
             </div>
         </div>
     );

@@ -5,7 +5,7 @@ import { Rating } from "@smastrom/react-rating";
 import '@smastrom/react-rating/style.css';
 
 
-const Doctor_Card = ({ img, name, profession_status, ratings, location, duty_time, visit_fee }) => {
+const Doctor_Card = ({ img, name, profession_status, ratings, location, duty_time, visit_fee, to }) => {
     return (
         <div className="w-[364px] h-[570px] rounded-xl p-5 bg-[#ffffff] hover:shadow-2xl border border-slate-200 mb-4">
             {/* Doctor Image */}
@@ -14,7 +14,7 @@ const Doctor_Card = ({ img, name, profession_status, ratings, location, duty_tim
             </div>
             {/* Doctor Info */}
             <div className="my-4">
-                <h1 className="text-xl font-bold ">{name}</h1>
+                <h1 className="text-xl font-bold text-slate-900">{name}</h1>
                 <p className="text-lg font-[400]">{profession_status}</p>
             </div>
             {/* Ratings doctor */}
@@ -41,7 +41,7 @@ const Doctor_Card = ({ img, name, profession_status, ratings, location, duty_tim
                     <p className="ml-2 text-lg font-[400]">$ {visit_fee}</p>
                 </label>
             </div>
-            <Link className="py-2 px-10 border-2 border-orange-600 text-orange-600 hover:bg-orange-500 hover:text-white rounded-lg ml-[4.5rem] font-[500] text-lg">View Profile</Link>
+            <Link to={to} className="py-2 px-10 border-2 border-orange-600 text-orange-600 hover:bg-orange-500 hover:text-white rounded-lg ml-[4.5rem] font-[500] text-lg">View Profile</Link>
         </div>
     );
 };

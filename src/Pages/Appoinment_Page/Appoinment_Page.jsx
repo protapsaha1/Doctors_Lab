@@ -88,9 +88,21 @@ const Appoinment_Page = () => {
                                 <div className="main_book_modal shadow-slate-200">
                                     <input type="checkbox" id="book_to_click" />
                                     <div className="modal_content_book">
-                                        <label htmlFor="book_to_click" className="text-2xl font-bold text-slate-900 bg-gray-200 w-[40px] h-[40px] rounded-[50%] cursor-pointer flex items-center justify-center"><AiOutlineClose /></label>
-                                        <div className="main_content">
-                                            <p className="text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ea ad in vitae aliquid earum temporibus, </p>
+                                        <div className="flex items-center justify-between relative">
+                                            <h1 className="text-xl font-semibold text-slate-900">Cavity protection</h1>
+                                            {/* Close Modal  */}
+                                            <label htmlFor="book_to_click" className="text-xl font-bold text-white bg-emerald-900 w-[30px] h-[30px] rounded-[50%] cursor-pointer flex items-center justify-center absolute -right-3 -top-3"><AiOutlineClose /></label>
+                                        </div>
+                                        {/* Appoinment booking form */}
+                                        <div className="pt-8">
+                                            <form>
+                                                <input className="w-[100%] h-[48px] bg-gray-100 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" value="August 08 2023" name="" disabled />
+                                                <input className="w-[100%] h-[48px] bg-gray-100 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" value="10:00 AM - 11:00 AM" name="" disabled />
+                                                <input className="w-[100%] h-[48px] bg-gray-50 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" placeholder="Full Name" name="" />
+                                                <input className="w-[100%] h-[48px] bg-gray-50 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" placeholder="Phone Number" name="" />
+                                                <input className="w-[100%] h-[48px] bg-gray-50 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="email" placeholder="Email" name="" />
+                                                <input className="w-[100%] h-[48px] bg-emerald-700 rounded-lg text-white font-medium text-xl cursor-pointer" type="submit" value="Submit Booking" />
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -108,9 +120,21 @@ const Appoinment_Page = () => {
                                 <div className="main_book_modal shadow-slate-200">
                                     <input type="checkbox" id="book_to_click" />
                                     <div className="modal_content_book">
-                                        <label htmlFor="book_to_click" className="text-2xl font-bold text-slate-900 bg-gray-200 w-[40px] h-[40px] rounded-[50%] cursor-pointer flex items-center justify-center"><AiOutlineClose /></label>
-                                        <div className="main_content">
-                                            <p className="text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ea ad in vitae aliquid earum temporibus, </p>
+                                        <div className="flex items-center justify-between relative">
+                                            <h1 className="text-xl font-semibold text-slate-900">Cavity protection</h1>
+                                            {/* Close Modal  */}
+                                            <label htmlFor="book_to_click" className="text-xl font-bold text-white bg-emerald-900 w-[30px] h-[30px] rounded-[50%] cursor-pointer flex items-center justify-center absolute -right-3 -top-3"><AiOutlineClose /></label>
+                                        </div>
+                                        {/* Appoinment booking form */}
+                                        <div className="pt-8">
+                                            <form>
+                                                <input className="w-[100%] h-[48px] bg-gray-100 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" value="August 08 2023" name="" disabled />
+                                                <input className="w-[100%] h-[48px] bg-gray-100 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" value="10:00 AM - 11:00 AM" name="" disabled />
+                                                <input className="w-[100%] h-[48px] bg-gray-50 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" placeholder="Full Name" name="" />
+                                                <input className="w-[100%] h-[48px] bg-gray-50 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" placeholder="Phone Number" name="" />
+                                                <input className="w-[100%] h-[48px] bg-gray-50 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="email" placeholder="Email" name="" />
+                                                <input className="w-[100%] h-[48px] bg-emerald-700 rounded-lg text-white font-medium text-xl cursor-pointer" type="submit" value="Submit Booking" />
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -127,9 +151,21 @@ const Appoinment_Page = () => {
                                 <div className="main_book_modal shadow-slate-200">
                                     <input type="checkbox" id="book_to_click" />
                                     <div className="modal_content_book">
-                                        <label htmlFor="book_to_click" className="text-2xl font-bold text-slate-900 bg-gray-200 w-[40px] h-[40px] rounded-[50%] cursor-pointer flex items-center justify-center"><AiOutlineClose /></label>
-                                        <div className="main_content">
-                                            <p className="text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ea ad in vitae aliquid earum temporibus, </p>
+                                        <div className="flex items-center justify-between relative">
+                                            <h1 className="text-xl font-semibold text-slate-900">Cavity protection</h1>
+                                            {/* Close Modal  */}
+                                            <label htmlFor="book_to_click" className="text-xl font-bold text-white bg-emerald-900 w-[30px] h-[30px] rounded-[50%] cursor-pointer flex items-center justify-center absolute -right-3 -top-3"><AiOutlineClose /></label>
+                                        </div>
+                                        {/* Appoinment booking form */}
+                                        <div className="pt-8">
+                                            <form>
+                                                <input className="w-[100%] h-[48px] bg-gray-100 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" value="August 08 2023" name="" disabled />
+                                                <input className="w-[100%] h-[48px] bg-gray-100 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" value="10:00 AM - 11:00 AM" name="" disabled />
+                                                <input className="w-[100%] h-[48px] bg-gray-50 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" placeholder="Full Name" name="" />
+                                                <input className="w-[100%] h-[48px] bg-gray-50 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" placeholder="Phone Number" name="" />
+                                                <input className="w-[100%] h-[48px] bg-gray-50 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="email" placeholder="Email" name="" />
+                                                <input className="w-[100%] h-[48px] bg-emerald-700 rounded-lg text-white font-medium text-xl cursor-pointer" type="submit" value="Submit Booking" />
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -146,9 +182,21 @@ const Appoinment_Page = () => {
                                 <div className="main_book_modal shadow-slate-200">
                                     <input type="checkbox" id="book_to_click" />
                                     <div className="modal_content_book">
-                                        <label htmlFor="book_to_click" className="text-2xl font-bold text-slate-900 bg-gray-200 w-[40px] h-[40px] rounded-[50%] cursor-pointer flex items-center justify-center"><AiOutlineClose /></label>
-                                        <div className="main_content">
-                                            <p className="text-black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ea ad in vitae aliquid earum temporibus, </p>
+                                        <div className="flex items-center justify-between relative">
+                                            <h1 className="text-xl font-semibold text-slate-900">Cavity protection</h1>
+                                            {/* Close Modal  */}
+                                            <label htmlFor="book_to_click" className="text-xl font-bold text-white bg-emerald-900 w-[30px] h-[30px] rounded-[50%] cursor-pointer flex items-center justify-center absolute -right-3 -top-3"><AiOutlineClose /></label>
+                                        </div>
+                                        {/* Appoinment booking form */}
+                                        <div className="pt-8">
+                                            <form>
+                                                <input className="w-[100%] h-[48px] bg-gray-100 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" value="August 08 2023" name="" disabled />
+                                                <input className="w-[100%] h-[48px] bg-gray-100 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" value="10:00 AM - 11:00 AM" name="" disabled />
+                                                <input className="w-[100%] h-[48px] bg-gray-50 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" placeholder="Full Name" name="" />
+                                                <input className="w-[100%] h-[48px] bg-gray-50 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="text" placeholder="Phone Number" name="" />
+                                                <input className="w-[100%] h-[48px] bg-gray-50 rounded-lg text-slate-800 font-medium text-lg ps-5 mb-5" type="email" placeholder="Email" name="" />
+                                                <input className="w-[100%] h-[48px] bg-emerald-700 rounded-lg text-white font-medium text-xl cursor-pointer" type="submit" value="Submit Booking" />
+                                            </form>
                                         </div>
                                     </div>
                                 </div>

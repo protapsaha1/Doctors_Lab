@@ -4,7 +4,12 @@ import Tippy from "@tippyjs/react";
 import { GoLocation } from "react-icons/go";
 import ig1 from "../../../../public/image/banner_image/Group 7.png";
 import ig2 from "../../../../public/image/banner_image/Vector (1).png";
+import { useLoaderData } from "react-router-dom";
+
+
 const Doctor_Profile = () => {
+    const doctorData = useLoaderData();
+    console.log(doctorData)
     return (
         <>
             <div className="bg-emerald-600 w-[100%] h-[500px] pt-20 px-20 pb-20 relative">
@@ -68,13 +73,13 @@ const Doctor_Profile = () => {
                 {/* Tab  */}
                 <div className="w-[1140px] h-[100%] bg-white mx-auto p-8 rounded-lg border border-slate-100 shadow-lg">
                     <div className="w-fit flex items-center border border-gray-300 shadow-xl shadow-slate-200 rounded-tl-xl rounded-tr-xl mb-8">
-                        <p className="text-xl font-semibold hover:bg-emerald-400 px-[86px] py-5 hover:shadow-inner cursor-pointer rounded-tl-xl">Overview</p>
-                        <p className="text-xl font-semibold hover:bg-emerald-400 px-[86px] py-5 hover:shadow-inner cursor-pointer">Locations</p>
-                        <p className="text-xl font-semibold hover:bg-emerald-400 px-[86px] py-5 hover:shadow-inner cursor-pointer">Reviews</p>
-                        <p className="text-xl font-semibold hover:bg-emerald-400 px-[86px] py-5 hover:shadow-inner cursor-pointer rounded-tr-xl">Business Hours</p>
+                        <p className="text-xl text-black font-semibold hover:bg-emerald-400 px-[86px] py-5 hover:shadow-inner cursor-pointer rounded-tl-xl">Overview</p>
+                        <p className="text-xl text-black font-semibold hover:bg-emerald-400 px-[86px] py-5 hover:shadow-inner cursor-pointer">Locations</p>
+                        <p className="text-xl text-black font-semibold hover:bg-emerald-400 px-[86px] py-5 hover:shadow-inner cursor-pointer">Reviews</p>
+                        <p className="text-xl text-black font-semibold hover:bg-emerald-400 px-[86px] py-5 hover:shadow-inner cursor-pointer rounded-tr-xl">Business Hours</p>
                     </div>
                     <div>
-                        <h3 className="text-2xl font-bold text-slate-800X">About Us</h3>
+                        <h3 className="text-2xl font-bold text-slate-800">About Us</h3>
                         <p className="text-lg text-slate-800 font-[400] pr-20 my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
                             libero recusandae ea consequatur itaque ad, modi harum quasi eveniet
                             accusamus neque saepe ratione tempora officia, eos excepturi

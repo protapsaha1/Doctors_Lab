@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Default_Main from "../Layouts/Default_Main";
 import Home_Page from "../Pages/Home_Page_Element/Home_Page/Home_Page";
-import All_Doctors from "../Pages/Doctors_Page/All_Doctors/All_Doctors";
 import Doctor_Profile from "../Pages/Doctors_Page/Doctor_Profile/Doctor_Profile";
 import Appoinment_Page from "../Pages/Appoinment_Page/Appoinment_Page";
 import Dashboard_Routes from "../Layouts/Dashboard_Routes";
@@ -12,6 +11,7 @@ import Dash_Home from "../Pages/Dashboard_Routes/Admin_Section/Dash_Home/Dash_Ho
 import All_Users from "../Pages/Dashboard_Routes/Admin_Section/All_Users/All_Users";
 import Manage_Doctors from "../Pages/Dashboard_Routes/Admin_Section/Manage_Doctors/Manage_Doctors";
 import Added_Doctors from "../Pages/Dashboard_Routes/Admin_Section/Added_Doctors/Added_Doctors";
+import Doctors from "../Pages/Doctors_Page/All_Doctors/Doctors";
 
 const router = createBrowserRouter([
     {
@@ -24,16 +24,17 @@ const router = createBrowserRouter([
             },
             {
                 path: "doctors",
-                element: <All_Doctors />
+                element: <Doctors />
             },
             {
                 path: "appoinment",
                 element: <Appoinment_Page />
             },
             {
-                path: "doctors-profile",
-                element: <Doctor_Profile />
-            },
+                path: "doctor-profile:id",
+                element: <Doctor_Profile />,
+                loader: ({ params }) => fetch(`http://localhost:3001/doctors/${params.id}`)
+            }
         ]
     },
     {
