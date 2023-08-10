@@ -10,10 +10,11 @@ import { useLoaderData } from "react-router-dom";
 const Doctor_Profile = () => {
     const doctorData = useLoaderData();
     console.log(doctorData)
+    const { name, doctor_img, speacialist, ratings, total_review, location, about, education_qualification, experience, services, specializations, award } = doctorData;
     return (
         <>
             <div className="bg-emerald-600 w-[100%] h-[500px] pt-20 px-20 pb-20 relative">
-                <h1 className="text-6xl font-bold text-white text-center mt-40 tracking-[2px] leading-6">Doctor Profile - <span className="uppercase">Dr. Robi</span></h1>
+                <h1 className="text-6xl font-bold text-white text-center mt-40 tracking-[2px] leading-6">Doctor Profile - <span className="uppercase">{name}</span></h1>
                 <img className="w-[300px] h-[300px] absolute left-2 top-28" src={ig1} alt="" />
                 <img className="w-[200px] h-[200px] absolute right-1 bottom-1" src={ig2} alt="" />
             </div>
@@ -21,24 +22,26 @@ const Doctor_Profile = () => {
                 <div className="my-28">
                     <div className="w-[1140px] mx-auto bg-white mb-10 rounded-lg p-5 flex border border-slate-100 shadow-lg">
                         <div className="w-[550px] h-[378px] mr-5">
-                            <img className="w-[100%] h-[100%] rounded-lg" src={doctor} alt="" />
+                            <img className="w-[100%] h-[100%] rounded-lg" src={doctor_img} alt="" />
                         </div>
                         <div>
                             <div className="mb-4">
-                                <h1 className="text-3xl font-bold text-slate-900 mb-3">Dr. Robi</h1>
-                                <p className="text-xl font-[200] tracking-[1px] text-gray-500 mb-3">M.B.B.S / Phego Thraphy Speacialist</p>
+                                <h1 className="text-3xl font-bold text-slate-900 mb-3">{name}</h1>
+                                <p className="text-xl font-[200] tracking-[1px] text-gray-500 mb-3">{speacialist}</p>
                                 <div className="flex items-center mb-3">
                                     <Rating
                                         style={{ maxWidth: 180 }}
-                                        value={5}
+                                        value={ratings}
                                         readOnly
                                     />
-                                    <span className="text-xl ms-1 text-slate-800">(<span className="text-lg">35</span>)</span>
+                                    <Tippy content={`reviews - ${total_review}`}>
+                                        <span className="text-xl ms-1 text-slate-800">(<span className="text-lg">{total_review}</span>)</span>
+                                    </Tippy>
                                 </div>
                                 <div className="flex items-center">
                                     <div className="text-2xl text-slate-800 mr-5"><GoLocation /></div>
                                     <div className="flex items-center">
-                                        <h3 className="text-slate-800 font-[200] tracking-[1px] mr-2">Dhanmondi, Dhaka, Bangladesh - </h3>
+                                        <h3 className="text-slate-800 font-[200] tracking-[1px] mr-2">{location?.diraction} - </h3>
                                         {/* Location deraction */}
                                         <Tippy content="Location"><span className="text-orange-500 hover:text-orange-600 cursor-pointer font-bold tracking-normal">Get Directions</span></Tippy>
                                     </div>
@@ -78,94 +81,75 @@ const Doctor_Profile = () => {
                         <p className="text-xl text-black font-semibold hover:bg-emerald-400 px-[86px] py-5 hover:shadow-inner cursor-pointer">Reviews</p>
                         <p className="text-xl text-black font-semibold hover:bg-emerald-400 px-[86px] py-5 hover:shadow-inner cursor-pointer rounded-tr-xl">Business Hours</p>
                     </div>
-                    <div>
+                    {/* About doctor */}
+                    {about && <div>
                         <h3 className="text-2xl font-bold text-slate-800">About Us</h3>
-                        <p className="text-lg text-slate-800 font-[400] pr-20 my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
-                            libero recusandae ea consequatur itaque ad, modi harum quasi eveniet
-                            accusamus neque saepe ratione tempora officia, eos excepturi
-                            distinctio autem nam.
-                        </p>
-                    </div>
+                        <p className="text-lg text-slate-800 font-[400] pr-20 my-5">{about}</p>
+                    </div>}
                     <div className="grid grid-cols-2">
                         <div>
-                            <div>
+                            {/* Doctor degrees */}
+                            {education_qualification && <div>
                                 <h1 className="text-2xl font-bold text-slate-800 mb-8">Education</h1>
                                 <ul className="ml-12 list-disc">
-                                    <li className="text-xl font-semibold text-slate-800 my-1">American Dental Medical University</li>
-                                    <p className="text-lg font-[400] text-slate-800 my-1">BDS</p>
-                                    <p className="text-lg font-[400] text-slate-800 my-1">1998 - 2003</p>
-                                    <li className="text-xl font-semibold text-slate-800 my-1">American Dental Medical University</li>
-                                    <p className="text-lg font-[400] text-slate-800 my-1">BDS</p>
-                                    <p className="text-lg font-[400] text-slate-800 my-1">1998 - 2003</p>
+                                    {education_qualification &&
+                                        education_qualification.map((eq, index) => <div key={index}>
+                                            <li className="text-xl font-semibold text-slate-800 my-1" > {eq?.institute}</li>
+                                            <p className="text-lg font-[400] text-slate-800 my-1">{eq?.degree}</p>
+                                            <p className="text-lg font-[400] text-slate-800 my-1">{eq?.year}</p>
+                                        </div>)
+                                    }
                                 </ul>
-                            </div>
-                            <div>
+                            </div>}
+                            {/* Doctor experience */}
+                            {experience && <div>
                                 <h1 className="text-2xl font-bold text-slate-800 mb-8">Work & Experience</h1>
                                 <ul className="ml-12 list-disc">
-                                    <li className="text-xl font-semibold text-slate-800 my-1">Glowing Smiles Family Dental Clinic</li>
-                                    <p className="text-lg font-[400] text-slate-800 my-1">2010 - Present (5 years)</p>
-                                    <li className="text-xl font-semibold text-slate-800 my-1">Comfort Care Dental Clinic</li>
-                                    <p className="text-lg font-[400] text-slate-800 my-1">2007 - 2010 (3 years)</p>
-                                    <li className="text-xl font-semibold text-slate-800 my-1">Dream Smile Dental Practice</li>
-                                    <p className="text-lg font-[400] text-slate-800 my-1">2005 - 2007 (2 years)</p>
+                                    {experience &&
+                                        experience.map((ex, index) => <div key={index}>
+                                            <li className="text-xl font-semibold text-slate-800 my-1">{ex?.hospital_name}</li>
+                                            <p className="text-lg font-[400] text-slate-800 my-1">{ex?.work_time}</p>
+                                        </div>)
+                                    }
                                 </ul>
-                            </div>
-                            <div>
+                            </div>}
+                            {/* Doctor service */}
+                            {services && <div>
                                 <h1 className="text-2xl font-bold text-slate-800 mb-8">Services</h1>
                                 <ul className="ml-12 list-disc">
-                                    <li className="text-sm font-[400] text-slate-800 my-1">Tooth cleaning</li>
-                                    <li className="text-sm font-[400] text-slate-800 my-1">Tooth cleaning</li>
-                                    <li className="text-sm font-[400] text-slate-800 my-1">Tooth cleaning</li>
-                                    <li className="text-sm font-[400] text-slate-800 my-1">Tooth cleaning</li>
-                                    <li className="text-sm font-[400] text-slate-800 my-1">Tooth cleaning</li>
-                                    <li className="text-sm font-[400] text-slate-800 my-1">Tooth cleaning</li>
+                                    {services &&
+                                        services.map((serve, index) => <li className="text-sm font-[400] text-slate-800 my-1" key={index}>{serve}</li>)
+                                    }
                                 </ul>
-                            </div>
+                            </div>}
                         </div>
                         <div>
-                            <div>
+                            {/* Doctors Awards */}
+                            {award && <div>
                                 <h1 className="text-2xl font-bold text-slate-800 mb-8">Awards</h1>
                                 <ul className="ml-12 list-disc">
-                                    <p className="text-lg font-[400] text-slate-800 my-1">July 2019</p>
-                                    <li className="text-xl font-semibold text-slate-800 my-1">Humanitarian Award</li>
-                                    <p className="text-lg font-[400] text-slate-800 my-1">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur minima incidunt
-                                        id fuga repellendus. Corporis laboriosam quaerat ipsam doloribus animi deserunt, pariatur
-                                        fugit eos modi rerum ut neque ea illo.
-                                    </p>
-                                    <p className="text-lg font-[400] text-slate-800 my-1">March 2011</p>
-                                    <li className="text-xl font-semibold text-slate-800 my-1">Certificate for International Volunteer Service</li>
-                                    <p className="text-lg font-[400] text-slate-800 my-1">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                        Impedit similique animi natus expedita? Nam similique
-                                        doloribus labore, soluta nobis suscipit nesciunt explicabo
-                                        voluptatem magnam, dolorem natus rem, minus enim! Impedit.
-                                    </p>
-                                    <p className="text-lg font-[400] text-slate-800 my-1">May 2008</p>
-                                    <li className="text-xl font-semibold text-slate-800 my-1">The Dental Professional of The Year Award</li>
-                                    <p className="text-lg font-[400] text-slate-800 my-1">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                        Impedit similique animi natus expedita? Nam similique
-                                        doloribus labore, soluta nobis suscipit nesciunt explicabo
-                                        voluptatem magnam, dolorem natus rem, minus enim! Impedit.
-                                    </p>
+                                    {award &&
+                                        award.map((aw, index) => <div key={index}>
+                                            <li className="text-xl font-semibold text-slate-800 my-1">{aw?.award_title}</li>
+                                            <p className="text-lg font-[400] text-slate-800 my-1">{aw?.award_description}</p>
+                                            <p className="text-lg font-[400] text-slate-800 my-1">{aw?.award_date}</p>
+                                        </div>)
+                                    }
                                 </ul>
-                            </div>
-                            <div>
+                            </div>}
+                            {/* Doctors Specializations */}
+                            {specializations && <div>
                                 <h1 className="text-2xl font-bold text-slate-800 mb-8">Specializations</h1>
                                 <ul className="ml-12 list-disc">
-                                    <li className="text-sm font-[400] text-slate-800 my-1">Tooth cleaning</li>
-                                    <li className="text-sm font-[400] text-slate-800 my-1">Tooth cleaning</li>
-                                    <li className="text-sm font-[400] text-slate-800 my-1">Tooth cleaning</li>
-                                    <li className="text-sm font-[400] text-slate-800 my-1">Tooth cleaning</li>
-                                    <li className="text-sm font-[400] text-slate-800 my-1">Tooth cleaning</li>
-                                    <li className="text-sm font-[400] text-slate-800 my-1">Tooth cleaning</li>
+                                    {specializations &&
+                                        specializations.map((sp, index) => <li className="text-sm font-[400] text-slate-800 my-1" key={index}>{sp}</li>)
+                                    }
                                 </ul>
-                            </div>
+                            </div>}
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 };

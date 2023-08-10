@@ -11,7 +11,7 @@ const Experts_Doctors = ({ doctor }) => {
             location={location.diraction}
             duty_time={duty_time}
             visit_fee={doctor_fee}
-            to={_id}
+            to={`/doctor-profile/${_id}`}
         />
     );
 };
