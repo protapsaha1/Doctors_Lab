@@ -17,7 +17,7 @@ const SignUp_Page = () => {
                 </div>
             </div>
             <div className="w-[50%] h-[100%] p-10">
-                <div className="w-[600px] h-[100%] mx-auto bg-gray-50 border border-gray-100 rounded-lg p-16">
+                <div className="w-[600px] h-[100%] mx-auto bg-gray-50 border border-gray-100 rounded-lg p-16 ">
                     <h1 className="text-4xl font-bold text-slate-800 text-center mb-10">Sign up to Hero,s</h1>
                     {/* Sign up form */}
                     <form>

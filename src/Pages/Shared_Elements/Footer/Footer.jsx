@@ -20,11 +20,11 @@ const Footer_Section = () => {
                         <label className="text-xl font-[700] text-black">Quick Links</label>
                         <ul className="mt-5">
                             <li className="my-1 text-lg font-[400] hover:text-emerald-500"><Link>About Us</Link></li>
-                            <li className="my-1 text-lg font-[400] hover:text-emerald-500"><Link>Service</Link></li>
-                            <li className="my-1 text-lg font-[400] hover:text-emerald-500"><Link>Doctors</Link></li>
+                            <li className="my-1 text-lg font-[400] hover:text-emerald-500"><a href="#service">Service</a></li>
+                            <li className="my-1 text-lg font-[400] hover:text-emerald-500"><Link to="/doctors">Doctors</Link></li>
                             <li className="my-1 text-lg font-[400] hover:text-emerald-500"><Link>Department</Link></li>
                             <li className="my-1 text-lg font-[400] hover:text-emerald-500"><Link>Online Payment</Link></li>
-                            <li className="my-1 text-lg font-[400] hover:text-emerald-500"><Link>Contact Us</Link></li>
+                            <li className="my-1 text-lg font-[400] hover:text-emerald-500"><a href="#contact">Contact Us</a></li>
                             <li className="my-1 text-lg font-[400] hover:text-emerald-500"><Link>My Account</Link></li>
                         </ul>
                     </div>
